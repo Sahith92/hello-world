@@ -1,61 +1,72 @@
+<!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<body>
 
-<head>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech|Share+Tech+Mono" rel="stylesheet" />
-    <title>Designs by Laighlin</title>
-</head>
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#band" class="w3-button w3-bar-item">Band</a>
+  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
 
-<body onload="draw()">
-    <canvas id="bg"></canvas>
-    <main id="content">
-        <h1>
-            <div class="hex moved"></div><span>About the Dev</span></h1>
-        <div class="subtext" id="main">
-            <p>The name's Lin (which is short for Lindeun or Laighlin, depending on where you know me from). I'm a 24-year-old South Asian design student with a tech sort of background and a lot to say about the trends and direction of the contemporary design
-                world.</p>
-            <p>I wanted to be an engineer for most of my life. By the time I changed my mind about that, my liaison with the applied sciences had drastically altered my worldview already. This still informs much of my work and work ethic - design is no less
-                of a science in my eyes than physics or computing. (In other words, I like design as long as I can be a nerd about it.)</p>
-        </div>
-        <h2>
-            <div class="hex"></div><span>Skills</span></h2>
-        <div class="subtext coll">
-            A good grasp of object-oriented programming and computing-related math as a whole. Proficient in CSS3 and HTML5; making significant inroads into JavaScript and JQuery. Adobe Illustrator is both enjoyable for me and putty in my hands. <i>Putty.</i>            In addition to my knowledge of coding, I also speak five human languages and am in the process of learning a few more.
-        </div>
-        <h2>
-            <div class="hex"></div><span>Hobbies & Interests</span></h2>
-        <div class="subtext coll">
-            Small indie coding projects (semi-professionally). Music (unprofessionally). Massively multiplayer online games (clumsily). Cooking (hungrily).
-        </div>
-        <h2>
-            <div class="hex"></div><span>Currently Working On</span></h2>
-        <div class="subtext coll">
-            An accessibility app for Android, a couple of desktop themes for a blogging platform I casually use, and a photography project detailing the interplay of natural and artifical in urban environments.
-        </div>
-        
-        <h2>
-            <div class="hex"></div><span>Find Me</span></h2>
-        <div class="subtext coll">
-            <a>Twitter</a> | <a>Tumblr</a> | <a>Codepen</a> | <a>Behance</a>
-        </div>
-        
-        <h2>
-            <div class="hex"></div><span>Contact Me</span></h2>
-        <div class="subtext coll">
-            <ul>
-                <li>Phone: +12 345 678 90</li>
-                <li>E-mail: <a>lindeun@yahoo.com</a></li>
-                <li>Discord: <a>Laighlin#0371</a></li>
-            </ul>
-        </div>
-    </main>
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="one"><path d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"></path></svg>
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="two"><path d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"></path></svg>
-    <div id="hex-holder">
-        <div class="hex" id="uno"></div>
-        <div class="hex" id="dos"></div>
-        <div class="hex" id="tres"></div>
-    </div>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="img_band_la.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img_band_ny.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img_band_chicago.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">THE BAND</h2>
+  <p class="w3-opacity"><i>We love music</i></p>
+  <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>John</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>John is the smartest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Paul</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Paul is the prettiest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Ringo</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Ringo is the funniest.</p>
+  </article>
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
 </body>
-
 </html>
+
